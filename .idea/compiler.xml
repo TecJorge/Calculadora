@@ -6,10 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+<<<<<<< HEAD
         <module name="exercicioGit1" />
         <module name="ProjetoGitExercise" />
         <module name="MTE" />
+=======
+        <module name="Calculadora upskill" />
+        <module name="Calculadora" />
+>>>>>>> db5ce2148f474a79213d1fbd603794c10a9667bd
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Calculadora" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

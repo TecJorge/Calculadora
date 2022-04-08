@@ -31,12 +31,11 @@ public class Subtracao {
 
     @Override
     public String toString() {
-        return String.format("  ",x,y);
+        return String.format("O resultado da Diferença entre %.2f e %.2f é %.2f ",x,y,this.subtracao(x,y));
     }
 
-    public double subtracao(){
-        double resultado = x-y;
-        return resultado;
+    public double subtracao(double x , double y){
+        return  x-y;
     }
 }
 
