@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="ef7cb48b-969e-4c1e-b48c-f773eb41815c" name="Changes" comment="">
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+>>>>>>> ab6df9541c60877d4ab674b57bcc86db90d400bb
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
 =======
 <<<<<<< HEAD
@@ -29,7 +33,11 @@
 =======
       <change beforePath="$PROJECT_DIR$/src/main/java/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Produto.java" afterDir="false" />
 >>>>>>> 05545fdbf4648ec55ced89bf6064eef67a07fb38
+<<<<<<< HEAD
 >>>>>>> 2dc28b990046001b38e433f115b213544265dad3
+=======
+>>>>>>> 29fc68f9163f5a417848328d0f82cf9cddb6b112
+>>>>>>> ab6df9541c60877d4ab674b57bcc86db90d400bb
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +72,10 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+<<<<<<< HEAD
+=======
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+>>>>>>> ab6df9541c60877d4ab674b57bcc86db90d400bb
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
