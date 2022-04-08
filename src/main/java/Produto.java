@@ -41,5 +41,4 @@ public class Produto {
     public double Produto() {
         return multiplicador*multiplicando;
     }
-    
 }

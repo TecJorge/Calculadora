@@ -25,6 +25,11 @@ public class Soma {
         this.num1 = num1;
     }
 
+    @Override
+    public String toString() {
+        return String.format("Primeiro número inserido: %.2f\nSegundo número inserido: %.2f",num1,num2);
+    }
+
     public void setNum2(double num2) {
         this.num2 = num2;
     }
