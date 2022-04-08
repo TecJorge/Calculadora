@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ef7cb48b-969e-4c1e-b48c-f773eb41815c" name="Changes" comment="">
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/src/main/java/Soma.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
 =======
@@ -14,6 +15,9 @@
       <change beforePath="$PROJECT_DIR$/Calculadora.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Calculadora.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
 >>>>>>> 18cc16cbe7b1b13303e6b7fb8bb523969b0e9bda
+=======
+      <change beforePath="$PROJECT_DIR$/src/main/java/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Produto.java" afterDir="false" />
+>>>>>>> 05545fdbf4648ec55ced89bf6064eef67a07fb38
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
