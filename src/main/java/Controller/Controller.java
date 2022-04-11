@@ -34,6 +34,9 @@ public class Controller {
     public String Int2Hex(){return new Funcionalidades(iPrimeiroNum).convertInt2Hex();}
     public boolean SomaCubo(){return new Funcionalidades(iPrimeiroNum).SomaCubo();}
 
+    public String BinaryToDecimal() {return new Funcionalidades(iPrimeiroNum).convertBinarytoDecimal();}
+
+
     public void initProgram(){
         System.out.println("\n\n");
         System.out.println("Calculadora");
@@ -49,6 +52,9 @@ public class Controller {
         System.out.println("9-Converter um numero inteiro decimal");
         System.out.println("10- Converter um numero binario para decimal");
         System.out.println("11- Converter um numero inteiro decimal para hexadecimal");
+
+        System.out.println("13 - Converter um número binário para decimal");
+
         System.out.println("0- Para Fechar a Aplicação");
     }
 

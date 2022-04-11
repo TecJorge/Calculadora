@@ -39,8 +39,14 @@ public class Funcionalidades {
     public String convertInt2Bin(){
         return Integer.toBinaryString((int) dPrimeiroNum);
     }
+
     public String convertInt2Hex(){
+
         return Integer.toHexString((int) dPrimeiroNum);
+    }
+    public String convertBinarytoDecimal(){
+            String binaryString= String.valueOf(dPrimeiroNum);
+            return String.valueOf(Integer.parseInt(binaryString,2));
     }
     public boolean SomaCubo(){
         double comparador;
@@ -54,5 +60,8 @@ public class Funcionalidades {
             return true;
         else
             return false;
+
 }
-}
+
+    }
+
