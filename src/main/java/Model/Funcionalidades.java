@@ -36,4 +36,8 @@ public class Funcionalidades {
         }
         return true;
     }
+    public String convertInt2Hex(){
+
+        return Integer.toHexString((int) dPrimeiroNum);
+    }
 }
