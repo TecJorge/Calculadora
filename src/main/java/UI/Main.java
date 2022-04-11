@@ -59,7 +59,7 @@ public class Main {
                             iPrimeiroNum= Double.parseDouble(utilitarios.readLineFromConsole("insira o Primeiro Número"));
                             iSegundoNum= Double.parseDouble(utilitarios.readLineFromConsole("insira o Segundo Número"));
                             controller=new Controller(iPrimeiroNum,iSegundoNum);
-                            System.out.printf("A divisão entre os dois inseridos é %.2f",controller.Substracao());
+                            System.out.printf("A divisão entre os dois inseridos é %.2f",controller.Divisao());
                             bGuardar=utilitarios.confirma("Deseja Guardar o Resultado?\n [S/N]");
                             if (bGuardar)
                                 iResultado= controller.Divisao();
