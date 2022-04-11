@@ -103,6 +103,16 @@ public class Main {
                         if (bGuardar)
                             iResultado = Double.parseDouble(controller.Int2Hex());
                         break;
+
+
+                    case "13":
+                        iPrimeiroNum = Double.parseDouble(utilitarios.readLineFromConsole("insira o Primeiro Número"));
+                        controller = new Controller(iPrimeiroNum);
+                        System.out.printf("A conversão do número binário %.0f para decimal: %s", iPrimeiroNum, controller.BinaryToDecimal());
+                        bGuardar = utilitarios.confirma("Deseja Guardar o Resultado?\n [S/N]");
+                        if (bGuardar)
+                            iResultado = Double.parseDouble(controller.BinaryToDecimal());
+                        break;
                 }
             } catch (Exception e) {
                 System.out.println(e.getMessage());

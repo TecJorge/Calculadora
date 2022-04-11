@@ -1,5 +1,7 @@
 package Model;
 
+import sun.misc.FloatingDecimal;
+
 public class Funcionalidades {
    private double dPrimeiroNum,dSegundoNum;
     public Funcionalidades(double dPrimeiroNum,double dSegundoNum){
@@ -43,5 +45,9 @@ public class Funcionalidades {
     public String convertInt2Hex(){
 
         return Integer.toHexString((int) dPrimeiroNum);
+    }
+    public String convertBinarytoDecimal(){
+            String binaryString= String.valueOf(dPrimeiroNum);
+            return String.valueOf(Integer.parseInt(binaryString,2));
     }
 }
