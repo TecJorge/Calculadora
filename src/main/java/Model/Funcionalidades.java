@@ -11,7 +11,6 @@ public class Funcionalidades {
     public Funcionalidades(double dPrimeiroNum){
         this.dPrimeiroNum=dPrimeiroNum;
     }
-
     public double CalculoFatorial(){
         double res=1;
         for (int i = 1; i <dPrimeiroNum; i++) {
@@ -49,5 +48,18 @@ public class Funcionalidades {
     public String convertBinarytoDecimal(){
             String binaryString= String.valueOf(dPrimeiroNum);
             return String.valueOf(Integer.parseInt(binaryString,2));
+    }
+    public boolean SomaCubo(){
+        double comparador;
+        double res=0;
+        comparador=dPrimeiroNum;
+        while (dPrimeiroNum!=0){
+            res=+Math.pow(dPrimeiroNum%10,3);
+            dPrimeiroNum=dPrimeiroNum%10;
+        }
+        if (res==comparador)
+            return true;
+        else
+            return false;
     }
 }
