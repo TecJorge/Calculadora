@@ -42,8 +42,7 @@ public class Main {
                             iSegundoNum= Double.parseDouble(utilitarios.readLineFromConsole("insira o Segundo Número"));
                             controller=new Controller(iPrimeiroNum,iSegundoNum);
                             System.out.printf("A subtração entre os dois inseridos é %.2f",controller.Substracao());
-                            bGuardar=utilitarios.confirma("Deseja Guardar o Resultado?\n [S/N]");
-                            if (bGuardar)
+                            if (controller.guardar())
                                 iResultado=controller.Substracao();
                             break;
                         case "3":
