@@ -24,6 +24,7 @@ public class Controller {
     public double Potencia(){return new Funcionalidades(iPrimeiroNum,iSegundoNum).Produto();}
     public double Fatorial(){return new Funcionalidades(iPrimeiroNum,iSegundoNum).CalculoFatorial();}
     public boolean Primo(){return new Funcionalidades(iPrimeiroNum,iSegundoNum).Primo();}
+    public String Int2Bin(){return new Funcionalidades(iPrimeiroNum).convertInt2Bin();}
     public String Int2Hex(){return new Funcionalidades(iPrimeiroNum).convertInt2Hex();}
 
 }

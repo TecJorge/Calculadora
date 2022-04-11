@@ -98,8 +98,16 @@ public class Main {
                         break;
                     case "8":
                     case "9":
-                    case "10":
                         throw new IllegalArgumentException("Função ainda não foi implementada");
+                    case "10":
+                        iPrimeiroNum = Double.parseDouble(utilitarios.readLineFromConsole("insira o Primeiro Número"));
+                        controller = new Controller(iPrimeiroNum);
+                        System.out.printf("A conversão do número inteiro %.0f para Binário : %s", iPrimeiroNum, controller.Int2Bin());
+                        bGuardar = utilitarios.confirma("Deseja Guardar o Resultado?\n [S/N]");
+                        if (bGuardar)
+                            iResultado = Double.parseDouble(controller.Int2Bin());
+                        break;
+                        
                     case "11":
                         iPrimeiroNum = Double.parseDouble(utilitarios.readLineFromConsole("insira o Primeiro Número"));
                         controller = new Controller(iPrimeiroNum);
