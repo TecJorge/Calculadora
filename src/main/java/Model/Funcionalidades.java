@@ -36,6 +36,10 @@ public class Funcionalidades {
         }
         return true;
     }
+    public String convertInt2Bin(){
+        return Integer.toBinaryString((int) dPrimeiroNum);
+    }
+
     public String convertInt2Hex(){
 
         return Integer.toHexString((int) dPrimeiroNum);
