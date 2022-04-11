@@ -49,11 +49,10 @@ public class Controller {
         System.out.println("6- Fatorial");
         System.out.println("7- Verificação de Primos");
         System.out.println("8- Verificar se um dado numero é a soma dos cubos(^3) do digitos que o compôem");
-        System.out.println("9-Converter um numero inteiro decimal");
+        System.out.println("9-Converter um numero decimal para binario");
         System.out.println("10- Converter um numero binario para decimal");
         System.out.println("11- Converter um numero inteiro decimal para hexadecimal");
-
-        System.out.println("13 - Converter um número binário para decimal");
+        System.out.println("12 - Apagar o numero guardado");
 
         System.out.println("0- Para Fechar a Aplicação");
     }

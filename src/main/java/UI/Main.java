@@ -92,8 +92,6 @@ public class Main {
                             iResultado = Double.parseDouble(controller.Int2Bin());
                         break;
                     case "9":
-                        throw new IllegalArgumentException("Função ainda não foi implementada");
-                    case "10":
                         iPrimeiroNum = Double.parseDouble(utilitarios.readLineFromConsole("insira o Primeiro Número"));
                         controller = new Controller(iPrimeiroNum);
                         System.out.printf("A conversão do número inteiro %.0f para Binário : %s", iPrimeiroNum, controller.Int2Bin());
@@ -102,7 +100,7 @@ public class Main {
                             iResultado = Double.parseDouble(controller.Int2Bin());
                         break;
                         
-                    case "11":
+                    case "10":
                         iPrimeiroNum = Double.parseDouble(utilitarios.readLineFromConsole("insira o Primeiro Número"));
                         controller = new Controller(iPrimeiroNum);
                         System.out.printf("A conversão do número inteiro %.0f para Hexadecimal : %s", iPrimeiroNum, controller.Int2Hex());
@@ -111,7 +109,7 @@ public class Main {
                             iResultado = Double.parseDouble(controller.Int2Hex());
                         break;
 
-                    case "13":
+                    case "11":
                         iPrimeiroNum = Double.parseDouble(utilitarios.readLineFromConsole("insira o Primeiro Número"));
                         controller = new Controller(iPrimeiroNum);
                         System.out.printf("A conversão do número binário %.0f para decimal: %s", iPrimeiroNum, controller.BinaryToDecimal());
@@ -119,6 +117,13 @@ public class Main {
                         if (bGuardar)
                             iResultado = Double.parseDouble(controller.BinaryToDecimal());
                         break;
+                    case "12":
+                        bGuardar = utilitarios.confirma("Deseja Apagar o Resultado?\n [S/N]");
+                        if(bGuardar)
+                        iResultado=0;
+                        break;
+                    case "13":
+
                 }
             } catch (Exception e) {
                 System.out.println(e.getMessage());

@@ -10,6 +10,10 @@ public class Funcionalidades {
         this.dPrimeiroNum=dPrimeiroNum;
     }
 
+    public void setdPrimeiroNum(double dPrimeiroNum) {
+        this.dPrimeiroNum = dPrimeiroNum;
+    }
+
     public double CalculoFatorial(){
         double res=1;
         for (int i = 1; i <dPrimeiroNum; i++) {
