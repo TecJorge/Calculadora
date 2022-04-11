@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) {
         Controller controller=new Controller();
         String Opcao;
-        double iPrimeiroNum, iSegundoNum, iResultado;
+        double iPrimeiroNum, iSegundoNum, iResultado=0;
         boolean bGuardar;
 
         do {
@@ -18,6 +18,17 @@ public class Main {
             try {
                 switch (Opcao) {
                     case "1":
+                        if (iResultado!=0){
+                            bGuardar = utilitarios.confirma("Deseja Usar o Resultado Previamente Guardado?\n [S/N]");
+                            if (bGuardar){
+                                iSegundoNum = Double.parseDouble(utilitarios.readLineFromConsole("insira o Segundo Número"));
+                                controller=new Controller(iResultado,iSegundoNum);
+                                System.out.printf("A soma entre os dois inseridos é %.2f", controller.Soma());
+                                bGuardar = utilitarios.confirma("Deseja Guardar o Resultado?\n [S/N]");
+                                if (bGuardar)
+                                    iResultado = controller.Soma();
+                            }
+                        }
                         iPrimeiroNum = Double.parseDouble(utilitarios.readLineFromConsole("insira o Primeiro Número"));
                         iSegundoNum = Double.parseDouble(utilitarios.readLineFromConsole("insira o Segundo Número"));
                         controller = new Controller(iPrimeiroNum, iSegundoNum);
@@ -27,6 +38,17 @@ public class Main {
                             iResultado = controller.Soma();
                         break;
                     case "2":
+                        if (iResultado!=0){
+                            bGuardar = utilitarios.confirma("Deseja Usar o Resultado Previamente Guardado?\n [S/N]");
+                            if (bGuardar){
+                                iSegundoNum = Double.parseDouble(utilitarios.readLineFromConsole("insira o Segundo Número"));
+                                controller=new Controller(iResultado,iSegundoNum);
+                                System.out.printf("A Subtração entre os dois inseridos é %.2f", controller.Substracao());
+                                bGuardar = utilitarios.confirma("Deseja Guardar o Resultado?\n [S/N]");
+                                if (bGuardar)
+                                    iResultado = controller.Substracao();
+                            }
+                        }
                         iPrimeiroNum = Double.parseDouble(utilitarios.readLineFromConsole("insira o Primeiro Número"));
                         iSegundoNum = Double.parseDouble(utilitarios.readLineFromConsole("insira o Segundo Número"));
                         controller = new Controller(iPrimeiroNum, iSegundoNum);
@@ -36,6 +58,16 @@ public class Main {
                             iResultado = controller.Substracao();
                         break;
                     case "3":
+                        if (iResultado!=0){
+                            bGuardar = utilitarios.confirma("Deseja Usar o Resultado Previamente Guardado?\n [S/N]");
+                            if (bGuardar){
+                                iSegundoNum = Double.parseDouble(utilitarios.readLineFromConsole("insira o Segundo Número"));
+                                controller=new Controller(iResultado,iSegundoNum);
+                                System.out.printf("A Multiplicação entre os dois inseridos é %.2f", controller.Multiplica());
+                                bGuardar = utilitarios.confirma("Deseja Guardar o Resultado?\n [S/N]");
+                                if (bGuardar)
+                                    iResultado = controller.Multiplica();
+                            }}
                         iPrimeiroNum = Double.parseDouble(utilitarios.readLineFromConsole("insira o Primeiro Número"));
                         iSegundoNum = Double.parseDouble(utilitarios.readLineFromConsole("insira o Segundo Número"));
                         controller = new Controller(iPrimeiroNum, iSegundoNum);
@@ -45,6 +77,16 @@ public class Main {
                             iResultado = controller.Multiplica();
                         break;
                     case "4":
+                        if (iResultado!=0){
+                            bGuardar = utilitarios.confirma("Deseja Usar o Resultado Previamente Guardado?\n [S/N]");
+                            if (bGuardar){
+                                iSegundoNum = Double.parseDouble(utilitarios.readLineFromConsole("insira o Segundo Número"));
+                                controller=new Controller(iResultado,iSegundoNum);
+                                System.out.printf("A Divisão entre os dois inseridos é %.2f", controller.Divisao());
+                                bGuardar = utilitarios.confirma("Deseja Guardar o Resultado?\n [S/N]");
+                                if (bGuardar)
+                                    iResultado = controller.Divisao();
+                            }}
                         iPrimeiroNum = Double.parseDouble(utilitarios.readLineFromConsole("insira o Primeiro Número"));
                         iSegundoNum = Double.parseDouble(utilitarios.readLineFromConsole("insira o Segundo Número"));
                         controller = new Controller(iPrimeiroNum, iSegundoNum);
@@ -54,15 +96,35 @@ public class Main {
                             iResultado = controller.Divisao();
                         break;
                     case "5":
+                        if (iResultado!=0){
+                            bGuardar = utilitarios.confirma("Deseja Usar o Resultado Previamente Guardado?\n [S/N]");
+                            if (bGuardar){
+                                iSegundoNum = Double.parseDouble(utilitarios.readLineFromConsole("insira o Segundo Número"));
+                                controller=new Controller(iResultado,iSegundoNum);
+                                System.out.printf("o Resultado é %.2f", controller.Potencia());
+                                bGuardar = utilitarios.confirma("Deseja Guardar o Resultado?\n [S/N]");
+                                if (bGuardar)
+                                    iResultado = controller.Potencia();
+                            }}
                         iPrimeiroNum = Double.parseDouble(utilitarios.readLineFromConsole("insira o Primeiro Número"));
                         iSegundoNum = Double.parseDouble(utilitarios.readLineFromConsole("insira o Segundo Número"));
                         controller = new Controller(iPrimeiroNum, iSegundoNum);
-                        System.out.printf("A potência entre os dois inseridos é %.2f", controller.Potencia());
+                        System.out.printf("o Resultado é %.2f", controller.Potencia());
                         bGuardar = utilitarios.confirma("Deseja Guardar o Resultado?\n [S/N]");
                         if (bGuardar)
                             iResultado = controller.Potencia();
                         break;
                     case "6":
+                        if (iResultado!=0){
+                            bGuardar = utilitarios.confirma("Deseja Usar o Resultado Previamente Guardado?\n [S/N]");
+                            if (bGuardar){
+                                iSegundoNum = Double.parseDouble(utilitarios.readLineFromConsole("insira o Segundo Número"));
+                                controller=new Controller(iResultado,iSegundoNum);
+                                System.out.printf("O factorial entre os dois inseridos é %.2f", controller.Fatorial());
+                                bGuardar = utilitarios.confirma("Deseja Guardar o Resultado?\n [S/N]");
+                                if (bGuardar)
+                                    iResultado = controller.Fatorial();
+                            }}
                         iPrimeiroNum = Double.parseDouble(utilitarios.readLineFromConsole("insira o Primeiro Número"));
                         iSegundoNum = Double.parseDouble(utilitarios.readLineFromConsole("insira o Segundo Número"));
                         controller = new Controller(iPrimeiroNum, iSegundoNum);
@@ -72,6 +134,16 @@ public class Main {
                             iResultado = controller.Fatorial();
                         break;
                     case "7":
+                        if (iResultado!=0){
+                            bGuardar = utilitarios.confirma("Deseja Usar o Resultado Previamente Guardado?\n [S/N]");
+                            if (bGuardar){
+                                iSegundoNum = Double.parseDouble(utilitarios.readLineFromConsole("insira o Segundo Número"));
+                                controller=new Controller(iResultado);
+                                if (controller.Primo()) {
+                                    System.out.printf("O número é primo", controller.Primo());
+                                } else {
+                                    System.out.println("O número não é primo");
+                            }}}
                         iPrimeiroNum = Double.parseDouble(utilitarios.readLineFromConsole("insira o Número"));
                         controller = new Controller(iPrimeiroNum);
                         if (controller.Primo()) {
@@ -84,14 +156,30 @@ public class Main {
                             iResultado = iPrimeiroNum;
                         break;
                     case "8":
+                        if (iResultado!=0){
+                            bGuardar = utilitarios.confirma("Deseja Usar o Resultado Previamente Guardado?\n [S/N]");
+                            if (bGuardar){
+                                controller=new Controller(iResultado);
+                                System.out.printf("O resultado com o numero introduzido é %s",controller.SomaCubo());
+                                bGuardar = utilitarios.confirma("Deseja Guardar o Resultado?\n [S/N]");
+                                    iResultado = controller.Fatorial();
+                            }}
                         iPrimeiroNum = Double.parseDouble(utilitarios.readLineFromConsole("insira o Primeiro Número"));
                         controller = new Controller(iPrimeiroNum);
                         System.out.printf("O resultado com o numero introduzido é %s",controller.SomaCubo());
                         bGuardar = utilitarios.confirma("Deseja Guardar o Resultado?\n [S/N]");
                         if (bGuardar)
-                            iResultado = Double.parseDouble(controller.Int2Bin());
+                            iResultado = iPrimeiroNum;
                         break;
                     case "9":
+                        if (iResultado!=0){
+                            bGuardar = utilitarios.confirma("Deseja Usar o Resultado Previamente Guardado?\n [S/N]");
+                            if (bGuardar){
+                                controller=new Controller(iResultado);
+                                System.out.printf("A conversão do número inteiro %.0f para Binário : %s", iResultado, controller.Int2Bin());
+                                bGuardar = utilitarios.confirma("Deseja Guardar o Resultado?\n [S/N]");
+                                iResultado = Double.parseDouble(controller.Int2Bin());
+                            }}
                         iPrimeiroNum = Double.parseDouble(utilitarios.readLineFromConsole("insira o Primeiro Número"));
                         controller = new Controller(iPrimeiroNum);
                         System.out.printf("A conversão do número inteiro %.0f para Binário : %s", iPrimeiroNum, controller.Int2Bin());
@@ -129,10 +217,7 @@ public class Main {
                 System.out.println(e.getMessage());
             }
         } while (!Opcao.equalsIgnoreCase("0"));
-
-    }
-
-}
+}}
 
 
 //1-Obter a soma de dois numeros  XL  1
@@ -149,3 +234,5 @@ public class Main {
 //12-Converter um numero inteiro decimal
 //13-Converter um numero binario para decimal
 //14-Converter um numero inteiro decimal para hexadecimal
+
+
