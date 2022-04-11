@@ -85,12 +85,14 @@ public class Main {
                         case "7":
                             iPrimeiroNum= Double.parseDouble(utilitarios.readLineFromConsole("insira o Número"));
                             controller=new Controller(iPrimeiroNum);
-                            if (){
-                            System.out.printf("O Número inserido é um Número Primo",controller.Primo());
-
+                            if (controller.Primo()){
+                            System.out.printf("O número é primo",controller.Primo());}
+                            else {
+                                System.out.println("O número não é primo");
+                            }
                             bGuardar=utilitarios.confirma("Deseja Guardar o Resultado?\n [S/N]");
                             if (bGuardar)
-                                iResultado=controller.Primo();
+                                iResultado=iPrimeiroNum;
                             break;
                         case "8":
                         case "9":
