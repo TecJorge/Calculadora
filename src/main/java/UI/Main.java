@@ -29,8 +29,8 @@ public class Main {
                 try {
                     switch (Opcao) {
                         case "1":
-                            iPrimeiroNum= Double.parseDouble(utilitarios.readLineFromConsole("insira o Primeiro Numero"));
-                            iSegundoNum= Double.parseDouble(utilitarios.readLineFromConsole("insira o Segundo Numero"));
+                            iPrimeiroNum= Double.parseDouble(utilitarios.readLineFromConsole("insira o Primeiro Número"));
+                            iSegundoNum= Double.parseDouble(utilitarios.readLineFromConsole("insira o Segundo Número"));
                             controller=new Controller(iPrimeiroNum,iSegundoNum);
                             System.out.printf("A soma entre os dois inseridos é %.2f",controller.Soma());
                             bGuardar=utilitarios.confirma("Deseja Guardar o Resultado?\n [S/N]");
@@ -38,10 +38,31 @@ public class Main {
                                 iResultado=controller.Soma();
                             break;
                         case "2":
+                            iPrimeiroNum= Double.parseDouble(utilitarios.readLineFromConsole("insira o Primeiro Número"));
+                            iSegundoNum= Double.parseDouble(utilitarios.readLineFromConsole("insira o Segundo Número"));
+                            controller=new Controller(iPrimeiroNum,iSegundoNum);
+                            System.out.printf("A subtração entre os dois inseridos é %.2f",controller.Substracao());
+                            bGuardar=utilitarios.confirma("Deseja Guardar o Resultado?\n [S/N]");
+                            if (bGuardar)
+                                iResultado=controller.Substracao();
                             break;
                         case "3":
+                            iPrimeiroNum= Double.parseDouble(utilitarios.readLineFromConsole("insira o Primeiro Número"));
+                            iSegundoNum= Double.parseDouble(utilitarios.readLineFromConsole("insira o Segundo Número"));
+                            controller=new Controller(iPrimeiroNum,iSegundoNum);
+                            System.out.printf("A multiplicação entre os dois inseridos é %.2f",controller.Multiplica());
+                            bGuardar=utilitarios.confirma("Deseja Guardar o Resultado?\n [S/N]");
+                            if (bGuardar)
+                                iResultado=controller.Multiplica();
                             break;
                         case "4":
+                            iPrimeiroNum= Double.parseDouble(utilitarios.readLineFromConsole("insira o Primeiro Número"));
+                            iSegundoNum= Double.parseDouble(utilitarios.readLineFromConsole("insira o Segundo Número"));
+                            controller=new Controller(iPrimeiroNum,iSegundoNum);
+                            System.out.printf("A divisão entre os dois inseridos é %.2f",controller.Substracao());
+                            bGuardar=utilitarios.confirma("Deseja Guardar o Resultado?\n [S/N]");
+                            if (bGuardar)
+                                iResultado= controller.Divisao();
                             break;
                         case "5":
                             break;

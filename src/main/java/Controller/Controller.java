@@ -18,6 +18,7 @@ public class Controller {
         return new Funcionalidades(iPrimeiroNum,iSegundoNum).somaDoisNumeros();
     }
     public double Substracao(){return new Funcionalidades(iPrimeiroNum,iSegundoNum).subtracao();}
+
     public double Multiplica(){return new Funcionalidades(iPrimeiroNum,iSegundoNum).Produto();}
     public double Divisao(){return new Funcionalidades(iPrimeiroNum,iSegundoNum).obterQuociente();}
     public double Potencia(){return new Funcionalidades(iPrimeiroNum,iSegundoNum).Produto();}
