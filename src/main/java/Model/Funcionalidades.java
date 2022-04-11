@@ -44,9 +44,20 @@ public class Funcionalidades {
 
         return Integer.toHexString((int) dPrimeiroNum);
     }
-    public String convertBinarytoDecimal(){
-            String binaryString= String.valueOf(dPrimeiroNum);
-            return String.valueOf(Integer.parseInt(binaryString,2));
+    public String convertBinarytoDecimal() {
+        int decimal = 0;
+        int p = 0;
+        while (true) {
+            if (dPrimeiroNum == 0) {
+                break;
+            } else {
+                int temp = (int) dPrimeiroNum % 10;
+                decimal += temp * Math.pow(2, p);
+                dPrimeiroNum = dPrimeiroNum / 10;
+                p++;
+            }
+        }
+            return String.valueOf(decimal);
     }
     public boolean SomaCubo(){
         double comparador;
