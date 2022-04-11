@@ -65,10 +65,32 @@ public class Main {
                                 iResultado= controller.Divisao();
                             break;
                         case "5":
+                            iPrimeiroNum= Double.parseDouble(utilitarios.readLineFromConsole("insira o Primeiro Número"));
+                            iSegundoNum= Double.parseDouble(utilitarios.readLineFromConsole("insira o Segundo Número"));
+                            controller=new Controller(iPrimeiroNum,iSegundoNum);
+                            System.out.printf("A potência entre os dois inseridos é %.2f",controller.Potencia());
+                            bGuardar=utilitarios.confirma("Deseja Guardar o Resultado?\n [S/N]");
+                            if (bGuardar)
+                                iResultado=controller.Potencia();
                             break;
                         case "6":
+                            iPrimeiroNum= Double.parseDouble(utilitarios.readLineFromConsole("insira o Primeiro Número"));
+                            iSegundoNum= Double.parseDouble(utilitarios.readLineFromConsole("insira o Segundo Número"));
+                            controller=new Controller(iPrimeiroNum,iSegundoNum);
+                            System.out.printf("O factorial entre os dois inseridos é %.2f",controller.Fatorial());
+                            bGuardar=utilitarios.confirma("Deseja Guardar o Resultado?\n [S/N]");
+                            if (bGuardar)
+                                iResultado=controller.Fatorial();
                             break;
                         case "7":
+                            iPrimeiroNum= Double.parseDouble(utilitarios.readLineFromConsole("insira o Número"));
+                            controller=new Controller(iPrimeiroNum);
+                            if (){
+                            System.out.printf("O Número inserido é um Número Primo",controller.Primo());
+
+                            bGuardar=utilitarios.confirma("Deseja Guardar o Resultado?\n [S/N]");
+                            if (bGuardar)
+                                iResultado=controller.Primo();
                             break;
                         case "8":
                         case "9":
