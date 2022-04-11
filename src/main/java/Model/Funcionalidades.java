@@ -1,7 +1,7 @@
 package Model;
 
 public class Funcionalidades {
-    double dPrimeiroNum,dSegundoNum;
+   private double dPrimeiroNum,dSegundoNum;
     public Funcionalidades(double dPrimeiroNum,double dSegundoNum){
         this.dPrimeiroNum=dPrimeiroNum;
         this.dSegundoNum=dSegundoNum;
@@ -15,8 +15,8 @@ public class Funcionalidades {
         for (int i = 1; i <dPrimeiroNum; i++) {
             res=res*(dPrimeiroNum-i);
         }
-        return  0;}
-    public double Potencia(){
+        return  res;}
+    public double potencia(){
         return Math.pow(dPrimeiroNum,dSegundoNum);
     }
     public double Produto() {
