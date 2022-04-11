@@ -30,12 +30,7 @@ public class Controller {
     public boolean guardar(){
         return utilitarios.confirma("Deseja Guardar o Resultado?\n [S/N]");
     }
-<<<<<<< HEAD
-=======
-=======
-    public boolean Primo(){return new Funcionalidades(iPrimeiroNum,iSegundoNum).Primo();}
     public String Int2Bin(){return new Funcionalidades(iPrimeiroNum).convertInt2Bin();}
->>>>>>> 791933e705b54f439e4e3d7a331b61a492ca66dc
     public String Int2Hex(){return new Funcionalidades(iPrimeiroNum).convertInt2Hex();}
 
     public void initProgram(){
